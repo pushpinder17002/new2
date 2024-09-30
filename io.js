@@ -125,7 +125,7 @@ true=1,false=0
 // console.log(game_name.length)
 // console.log(game_name.toUpperCase())
 // console.log(game_name.charAt(4))
-// console.log(game_name.indexOf('t'))
+// console.log(game_name.iOf('t'))
 
 // let new_string="abcdefgh"
 // let another_string=new_string.substring(0,4)
@@ -176,7 +176,7 @@ true=1,false=0
 // myArr.unshift(7)
 // myArr.pop()
 // console.log(myArr.includes(9))
-// console.log(myArr.indexOf(9))
+// console.log(myArr.jOf(9))
 
 // const myArr=[1,2,3,4,5,6,7]
 // const newArr=myArr.join()
@@ -307,8 +307,215 @@ true=1,false=0
 // }
 // Sum_of_two_number(2,4)
 
-function sum(num1,num2) {
-    let result=num1+num2
-    return result
-}
-console.log(sum(2,3));
+// function sum(num1,num2) {
+//     let result=num1+num2
+//     return result
+// }
+// console.log(sum(2,3));
+
+// function Addition(Number1,Number2) {
+
+//     return Number1+Number2
+// }
+// console.log(Addition(2,5))
+// 
+// function Is_Logged_in(Username="abc") {
+//     if(!Username){
+//         console.log("Please enter a valid name");
+//         return
+//     }
+//     return `${Username} is logged in `
+// }
+// console.log(Is_Logged_in("Pushpinder "));
+// REST OPERATOR AND SPREAD OPERATOR 
+
+// function Calculating_Cart_Price(val1,val2,...num1) {
+//     return num1
+// }
+// console.log(Calculating_Cart_Price(100,200,300,400,500));
+
+// PAssing an Array and object in functions
+// const user4={
+//     Name:"Pushpinder",
+//     age:22,
+//     Gender:"Male"
+// }
+// function handle_object(Any_object) {
+//     console.log(`My name is ${Name},my age is${age}`)
+    
+// }
+// handle_object()
+
+// function one() {
+//     const user="pushpinder"
+//     function two() {
+//         const isloggedin=true
+//         console.log(user);
+        
+//     }
+//     return user
+// }
+// console.log(one())
+
+// function addone(num1) {
+//     return num1+1
+// }
+// console.log(addone(5))
+
+// const sum= function addtwo(num2) {
+//     return num2+2
+// }
+// sum(6)
+
+// const user5={
+//     user_name:"Pushpinder",
+//     age:22,
+//     welcome_message:function (){
+//         console.log(`${this.user_name} , hello sir`);
+        
+//     } 
+// }
+// user5.welcome_message()
+// user5.user_name="sam"
+// user5.welcome_message()
+// console.log(this);
+// function one() {
+//     const user="Pushpinder"
+//     console.log(this.user);
+    
+// }
+// one()
+// ********* ARROW KEYWORD **********
+
+// const user= () => {
+//     let user_name="Pushpinder "
+//     console.log(user_name)
+// }
+// user()
+
+// const add=(num1,num2) => {
+//     return num1+num2
+// }
+// console.log((add(4,5)));
+
+// const addtwo = (num1,num2)=> (num1+num2)
+// console.log((addtwo(3,5)));
+
+// const name=()=> ({userName:"pushpinder"})
+// console.log(name());
+
+// IMMEDIATELY INVOKED FUNCTION EXPRESSION       (IMportant for interview)
+// (function one() {
+//     console.log(`DB CONNECTED`);
+    
+// })();
+// ((Name)=>{
+//     console.log(`DB CONNECTED TWO ${Name}`);
+    
+// })("Pushpinder ")
+
+// const Is_logged_in=true
+// const debit_card=true
+// if(Is_logged_in && debit_card && 2===2){
+//     console.log("allowed for transactions");
+    
+// }
+// console.log("out of conditional flow");
+
+//  const Is_Logged_in_edge=true
+//  if(Is_Logged_in_google||Is_Logged_in_edge){
+//     console.log("Allow user ");
+    
+//  }
+// const month=3
+// switch (month) {
+//     case 1:
+//         console.log("jan"); 
+//         break;
+//     case 2:
+//         console.log("feb"); 
+//         break;
+//     case 3:
+//         console.log("march"); 
+//         break;
+
+//     default:
+//         break;
+// }
+
+// ******* Truthy and falsey values **********
+//  Falsy value are [false ,0,-0,bigInt 0n,null,undefined,NaN,""]
+// TRUTHY value are["0","false"," ",[],{},function(){}]
+// const my_arr=[]
+// if (my_arr.length===0) {
+//     console.log("empty array");
+    
+// }
+// const my_obj={}
+// if (my_obj.keys===0) {
+//     console.log("empty array");
+    
+// }
+//  **********Iterations
+// for (let i = 0; i < 10; i++) {
+//     const element = i;
+//     console.log(element);
+//     if (i==5) {
+//         console.log("5 qwqe");
+        
+//     }
+    
+// }
+// for (let i = 0; i < 10; i++) {
+//     console.log(`Outer loop :${i}`);
+//     for (let j = 0; j < 10; j++) {
+//         const element = j;
+//         console.log(`Inner loop :${j} and outer loop :${i}`);   
+//     }  
+// }
+//  break and continue
+// for (let index = 1; index <= 20; index++) {
+//     if (index== 5) {
+//         console.log(`5 detected`);
+//         break
+//     }
+//     console.log(`value of inndex :${index}`);
+//     ;
+    
+// }
+// for (let index = 1; index <= 20; index++) {
+//     if (index== 5) {
+//         console.log(`5 detected`);
+//         continue
+//     }
+//     console.log(`value of inndex :${index}`);
+//     ;
+    
+// }
+//  While loop
+// let index= 0
+// while (index<=10) {
+//     console.log(`value of index ${index}`);
+//     index++
+// }
+// let arr=["a","b","c","d"]
+// let i=0
+// while (i <arr.length) {
+//     console.log(`the value of array:${arr[i]}`);
+//     i++
+// }
+// let score=0
+// do {
+//     console.log(`Score value:${score}`);
+//     score++
+// } while (score<=10);
+//  Array Loops ( important topic for interview )[ high order Array Loops]
+// const my_arr=[1,2,3,4,5,6,7,8]
+// for (const num of my_arr) {
+//     console.log(num);
+    
+// }
+// const name="pushpinder"
+// for(const alpha of name){
+//     console.log(`alphabets in name:${alpha}`)
+// }

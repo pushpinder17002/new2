@@ -519,3 +519,108 @@ true=1,false=0
 // for(const alpha of name){
 //     console.log(`alphabets in name:${alpha}`)
 // }
+// const map=new Map()
+// map.set("IND","India")
+// map.set("usa","united sate of america")
+// map.set("jap","japan")
+// // console.log(map);
+// for (const [key,value] of map) {
+//     console.log(key,":-",value);
+    
+// }
+// const My_arr=["a","b","c","d","e"]
+// for (const key in My_arr) {
+//     console.log(My_arr[key]);
+    
+// }
+// const map=new Map()
+// map.set("IND","India")
+// map.set("usa","united sate of america")
+// map.set("jap","japan")
+// for (const key in map) {
+//     console.log(map);  
+// }
+
+// const coding=["c++","python","ruby","javascript","java","swift"]
+// // coding.forEach( function (item) {
+// //     console.log(item);
+    
+// // })
+// coding.forEach( (item,index,arr)=>  {
+//     console.log(item,index,arr);
+    
+// })
+// const coding_file=[
+//     {
+//         "language":"javascript",
+//         "language_file_name":"js"
+//     },
+//     {
+//         "language":"java",
+//         "language_file_name":"java"
+//     },
+//     {
+//         "language":"python",
+//         "language_file_name":"phy"
+//     },
+//     {
+//         "language":"html",
+//         "language_file_name":"js"
+//     },
+// ]
+// coding_file.forEach( (item) =>{
+//     console.log(item.language_file_name);
+    
+// })
+//  ********* FILTERS ************(IMPORTANT)
+const my_nums=[1,2,3,4,5,6,7,8,9,10]
+// const new_nums=my_nums.filter( (num) => {
+//     return num>4
+// } )
+// console.log(new_nums);
+
+// const new_nums=[]
+// my_nums.forEach( (num) => {
+//     if (num>4) {
+//         new_nums.push(num)
+//     }
+// })
+// console.log(new_nums);
+// const new_abc=my_nums.map( (num) => {
+//     return num+10
+// })
+// console.log(new_abc);
+
+// const number=[1,2,3]
+// const my_total=number.reduce( function (acc,currVal) {
+//     console.log(`Acc value :${acc}, CurrVal: ${currVal}`);
+    
+//     return acc+currVal
+// },0)
+// console.log(my_total);
+// const new_obj=[
+// {
+//     course_name:"a1",
+//     price:4500
+// },
+// {
+//     course_name:"a2",
+//     price:5500
+// },
+// {
+//     course_name:"a3",
+//     price:8500
+// },
+// {
+//     course_name:"a4",
+//     price:9700
+// }
+// ]
+// const price=new_obj.reduce( (acc,item) =>{
+//    return acc+ item.price
+// },0)
+// console.log(price);
+
+
+
+

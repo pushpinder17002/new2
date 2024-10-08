@@ -3,70 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pushpinder</title>
+    <title>htnml Events </title>
 </head>
-<body style="background-color: #212121;color: azure;">
-    <!-- <div class="parent">
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thrusday</div>
-        <div class="day">Friday</div>
-        <div class="day">Saturday</div>
-    </div> -->
-    <ul class="language">
-        <li>JAVASCRIPT</li>
-    </ul>
-
-</body>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
 <script>
-    // const parent =document.querySelector(".parent")
-    // // console.log(parent);
-    // // console.log(parent.children);
-    // // console.log(parent.children[2].innerHTML);
-    // // for (let index = 0; index < parent.children.length; index++) {
-    // //     console.log(parent.children[index].innerHTML)
-        
-    // // }
-    // parent.children[2].style.color="orange"
-    // // console.log(parent.firstElementChild);
-    // const new_day=document.querySelector(".day")
-    // // console.log(new_day);
-    // // console.log(new_day.parentElement);
-    // // console.log(new_day.nextElementSibling);
-    // console.log(parent.ChildNodes);
-    // const div=document.createElement('div')
-    // console.log(div);
-    // div.className="my-div"
-    // div.id= Math.round(Math.random()*10+1)
-    // div.setAttribute("title","generated title")
-    // const add_text=document.createTextNode("pushpinder")
-    // div.appendChild(add_text)
-    // document.body.appendChild(div)
-    function addLang(langname) {
-        const li=document.createElement("li");
-        li.innerHTML=`${langname}`
-        document.querySelector(".language").appendChild(li)
-    }
-    function optisme(langname) {
-        const li=document.createElement("li");
-        li.appendChild(document.createTextNode(langname))
-        document.querySelector(".language").appendChild(li)
-    }
-    addLang("PYTHON")
-    addLang("TYPESCRIPT")
-    optisme("GOLANG")
-    // edit element in Dom 
-    const secondLang=document.querySelector("li:nth-child(2)")
-    const new_li=document.createElement("li")
-    new_li.textContent="MOJO"
-    secondLang.replaceWith(new_li)
-    const firstLang=document.querySelector("li:first-child")
-    const new_li1=document.createElement("li")
-    new_li1.textContent="RUBY"
-    firstLang.replaceWith(new_li1)
-    // ******REMOVE******
-    const lastlang=document.querySelector("li:last-child")
-    lastlang.remove()
-</script>
-</html>
+//     document.getElementById("owl").onclick= function () {
+//         alert("owl clicked")
+//     }
+// addevennt()
+// onEvent()
+// document.getElementById('images').addEventListener('click',function (e){
+//             console.log("inside ul",);
+            
+//         },true)
+//         document.getElementById('owl').addEventListener('click',function (e){
+//             console.log("owl elciked",);
+            
+//         },true)
+    document.querySelector("#images").addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        let removeIt=e.target.parentNode
+        removeIt.remove() 
+    })
+// </script>
+</body>
